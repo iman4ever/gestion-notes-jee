@@ -1,0 +1,30 @@
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Smart Tomcat
+.smarttomcat/
+
+# VS Code local settings
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Local database configuration
+src/main/resources/hibernate.cfg.xml
+hibernate.local.backup.xml

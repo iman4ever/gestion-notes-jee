@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"[]>
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/gestion_notes?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">CHANGE_ME</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.format_sql">true</property>
+    <property name="hibernate.connection.pool_size">10</property>
+    <mapping class="ma.ensa.gestionnotes.model.Utilisateur" />
+    <mapping class="ma.ensa.gestionnotes.model.Etudiant" />
+    <mapping class="ma.ensa.gestionnotes.model.Professeur" />
+    <mapping class="ma.ensa.gestionnotes.model.Filiere" />
+    <mapping class="ma.ensa.gestionnotes.model.Niveau" />
+    <mapping class="ma.ensa.gestionnotes.model.AnneeUniversitaire" />
+    <mapping class="ma.ensa.gestionnotes.model.Promotion" />
+    <mapping class="ma.ensa.gestionnotes.model.Module" />
+    <mapping class="ma.ensa.gestionnotes.model.Inscription" />
+    <mapping class="ma.ensa.gestionnotes.model.Enseignement" />
+    <mapping class="ma.ensa.gestionnotes.model.Note" />
+  </session-factory>
+</hibernate-configuration>
